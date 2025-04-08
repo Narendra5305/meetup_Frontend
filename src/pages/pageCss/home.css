@@ -20,6 +20,9 @@
     width: 30%;
     padding: 5px;
     background-color: RGB(246, 247, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .home-child-2{

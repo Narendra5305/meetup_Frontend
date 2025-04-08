@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./pageCss/home.css"
 import axios from "axios";
+import Calendar from "../component/calender"
 
 
 
@@ -35,6 +36,9 @@ const Home =() =>{
        <div id="home">
             <div className="home-child">
                 <div className="home-child-1">
+                    <div>
+                        <Calendar/>
+                    </div>
                     <div className="home-child-1-child">
                         <div className="home-child-1-child-1">
                             <h3>Your groups</h3>
