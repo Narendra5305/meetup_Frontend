@@ -10,6 +10,11 @@ const Home =() =>{
     const [groups,setGroup] = useState([])
     const [events,setEvent] = useState([])
 
+    const userId = document.cookie.split("; ").find((row) => row.startsWith("userId="))?.split("=")[1];
+
+    console.log("userId from cookie:", userId);
+
+
     useEffect(()=>{
         try {
             const fetchData = async() =>{
@@ -39,7 +44,21 @@ const Home =() =>{
                     <div>
                         <Calendar/>
                     </div>
-                    <div className="home-child-1-child">
+
+                    <div className="home-child-1-child-new-part">
+
+                        <div className="home-child-1-child-new-part-child-1">
+                            
+                            <h2>Your next events</h2>
+                            <a href="">View All</a>
+                            
+                        </div>
+                        
+
+                    </div>
+
+
+                    {/* <div className="home-child-1-child">
                         <div className="home-child-1-child-1">
                             <h3>Your groups</h3>
                         </div>
@@ -57,7 +76,7 @@ const Home =() =>{
                             </div>
                         )))}
 
-                    </div>
+                    </div> */}
 
 
                 </div>

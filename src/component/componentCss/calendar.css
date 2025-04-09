@@ -3,6 +3,9 @@
     width: 300px;
     padding: 10px;
     font-family: Arial , sans-serif;
+    border-radius: 10px ;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .calendar-header{
@@ -48,4 +51,21 @@
 
 .calendar-other-month{
     color: #bbb;
+}
+
+.footer-buttons{
+   
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-buttons button{
+    border: none;
+    background-color: transparent;
+    color: #00798c;
+    border:1px solid #00798c;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
 }

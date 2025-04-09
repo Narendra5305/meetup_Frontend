@@ -95,12 +95,15 @@ const Calendar = () =>{
 
 
     return(
-        <div className="calendar-container">
-            <RenderHeader/>
-            <RenderDays/>
-            <RenderCells/>
+        <div className="main-calender-container">
+            <div className="calendar-container">
+                <RenderHeader/>
+                <RenderDays/>
+                <RenderCells/>
+            </div>
             <RenderFooter/>
         </div>
+       
         
     )
     

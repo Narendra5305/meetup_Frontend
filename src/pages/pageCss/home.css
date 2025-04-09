@@ -19,10 +19,11 @@
 .home-child-1{
     width: 30%;
     padding: 5px;
-    background-color: RGB(246, 247, 248);
+   
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid;
 }
 
 .home-child-2{
@@ -121,5 +122,31 @@
     font-size: 16px;
     font-family: 18px;
     font-weight: 600;
+}
+
+
+.home-child-1-child-new-part{
+    background-color: #F6F7F8;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.home-child-1-child-new-part-child-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.home-child-1-child-new-part-child-1 h2{
+    font-size: 20px;
+}
+
+.home-child-1-child-new-part-child-1 a{
+    color: #00798c;
+    
 }
 
