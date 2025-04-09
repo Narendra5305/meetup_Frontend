@@ -16,6 +16,10 @@ import Events from './pages/events';
 import Footbar from './component/footbar';
 import Signin from './pages/signin';
 import Signup from './pages/signup';
+import EventPageDetails from './pages/eventDetailPage';
+import EventPage from './pages/eventPage';
+import GroupPage from './pages/groupPage';
+import GroupDetailsPage from './pages/groupDetail.jsx';
 
 
 function App() {
@@ -30,6 +34,17 @@ function App() {
           <Route path="/events"  element={<Events/>}/>
           <Route path="/signin"  element={<Signin/>}/>
           <Route path="/signup"  element={<Signup/>}/>
+          
+
+          <Route path="/group"  element={<GroupPage/>}/>
+          <Route path="/groupDetails/:id"  element={<GroupDetailsPage/>}/>
+
+
+          <Route path="/event"  element={<EventPage/>}/>
+          <Route path="/eventDetails/:id"  element={<EventPageDetails/>}/>
+          
+
+          EventPageDetails
         </Routes>
 
       <Footbar/>
