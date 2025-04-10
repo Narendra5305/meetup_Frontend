@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./pageCss/home.css"
 import axios from "axios";
 import Calendar from "../component/calender"
+import Loading from "../component/loading";
 
 
 
@@ -28,7 +29,9 @@ const Home =() =>{
 
     if (events.length===0 && groups.length===0){
         return(
-            <p>Loading....</p>
+            <>
+                <Loading/>
+            </>
         )
     }
 
@@ -47,7 +50,7 @@ const Home =() =>{
                         <div className="home-child-1-child-new-part-child-1">
                             
                             <h2>Your next events</h2>
-                            <a href="">View All</a>
+                            <a href="/events">View All</a>
                             
                         </div>
 

@@ -17,7 +17,6 @@ import Footbar from './component/footbar';
 import Signin from './pages/signin';
 import Signup from './pages/signup';
 import EventPageDetails from './pages/eventDetailPage';
-import EventPage from './pages/eventPage';
 import GroupPage from './pages/groupPage';
 import SiginSuccessFull from './pages/signinSuccessfull';
 import GroupDetailsPage from './pages/groupDetail.jsx';
@@ -33,7 +32,6 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path="/"  element={<Home/>}/>
-          <Route path="/events"  element={<Events/>}/>
           <Route path="/signin"  element={<Signin/>}/>
 
           <Route path="/signinSuccess"  element={<SiginSuccessFull/>}/>
@@ -46,9 +44,10 @@ function App() {
 
           <Route path="/groupDetails/:id"  element={ <PrivateRoute>  <GroupDetailsPage/>  </PrivateRoute> }/>
 
+          <Route path="/events"  element={<PrivateRoute> <Events /> </PrivateRoute>}/>
+          
 
-          <Route path="/event"  element={ <PrivateRoute>   <EventPage/> </PrivateRoute>  }/>
-          <Route path="/eventDetails/:id"  element={  <PrivateRoute> <EventPageDetails/> </PrivateRoute> }/>
+          <Route path="/events/:id"  element={  <PrivateRoute> <EventPageDetails/> </PrivateRoute> }/>
           
 
           

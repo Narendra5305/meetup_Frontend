@@ -39,11 +39,15 @@
 }
 
 
+.home-child-1-child-2{
+    
+    width: 90%;
+}
+
 
 .home-child-1-child-2 a{
     color:  RGB(0, 121, 138) ;
     font-size: 18px;
-    
     
 }
 
@@ -52,7 +56,7 @@
     height: 100px;
     border-radius: 7px;
     margin-top: 10px;
-    width: 380px;
+    width: 100%;
 }
 
 .group-cards-home-img img{
@@ -133,11 +137,12 @@
 .home-child-1-child-new-part{
     background-color: #F6F7F8;
     border-radius: 5px;
-    width: 100%;
+    width: 120%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .home-child-1-child-new-part-child-1{
@@ -156,6 +161,7 @@
 
 .home-child-1-child-new-part-child-1 a{
     color: #00798c;
+    text-decoration: none;
     
 }
 
