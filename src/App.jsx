@@ -19,8 +19,9 @@ import Signup from './pages/signup';
 import EventPageDetails from './pages/eventDetailPage';
 import EventPage from './pages/eventPage';
 import GroupPage from './pages/groupPage';
-import GroupDetailsPage from './pages/groupDetail';
 import SiginSuccessFull from './pages/signinSuccessfull';
+import GroupDetailsPage from './pages/groupDetail.jsx';
+import PrivateRoute from './pages/privateRoute.jsx';
 
 
 function App() {
@@ -38,20 +39,19 @@ function App() {
           <Route path="/signinSuccess"  element={<SiginSuccessFull/>}/>
 
           
-
-          
           <Route path="/signup"  element={<Signup/>}/>
           
 
-          <Route path="/group"  element={<GroupPage/>}/>
-          <Route path="/groupDetails/:id"  element={<GroupDetailsPage/>}/>
+          <Route path="/group"  element={<PrivateRoute> <GroupPage /> </PrivateRoute>}/>
+
+          <Route path="/groupDetails/:id"  element={ <PrivateRoute>  <GroupDetailsPage/>  </PrivateRoute> }/>
 
 
-          <Route path="/event"  element={<EventPage/>}/>
-          <Route path="/eventDetails/:id"  element={<EventPageDetails/>}/>
+          <Route path="/event"  element={ <PrivateRoute>   <EventPage/> </PrivateRoute>  }/>
+          <Route path="/eventDetails/:id"  element={  <PrivateRoute> <EventPageDetails/> </PrivateRoute> }/>
           
 
-          EventPageDetails
+          
         </Routes>
 
       <Footbar/>

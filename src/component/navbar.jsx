@@ -8,7 +8,7 @@ const Navbar =() =>{
     return(
        <div id="navbar">
             <div className="navbar-1">
-                <div className="navbar-1-child-1">
+                <div onClick={()=> navigate('/')} className="navbar-1-child-1">
                     <img src="https://cdn.worldvectorlogo.com/logos/meetup-1.svg" alt="meetup logo" />
                 </div>
                 <div className="navbar-1-child-2">

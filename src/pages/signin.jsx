@@ -22,15 +22,14 @@ const Signin = () =>{
     }
 
 
-    useEffect(()=>{
-        axios.get("https://meetup-backend-8rsw.onrender.com/users/google" ,{withCredentials:true})
-        .then((res)=>{
-            setUser(res.data)
-            console.log(res.data)
-            localStorage.setItem("user" ,JSON.stringify(res.data));
-            navigate("/")
-        })
-    })
+    // useEffect(()=>{
+    //     axios.get("https://meetup-backend-8rsw.onrender.com/users/google" ,{withCredentials:true})
+    //     .then((res)=>{
+    //         setUser(res.data)
+    //         localStorage.setItem("user" ,JSON.stringify(res.data));
+    //         navigate("/")
+    //     })
+    // })
 
 
     const handleSignIn =async (e) =>{
@@ -45,7 +44,7 @@ const Signin = () =>{
             if (response.status === 200) { 
                 setEmail("")
                 setPassword("")
-                console.log("Login successful:", response.data);
+                localStorage.setItem('authData', JSON.stringify(response.data));
                 navigate('/');  
             } else {
                 console.log("Unexpected response:", response);
