@@ -19,7 +19,8 @@ import Signup from './pages/signup';
 import EventPageDetails from './pages/eventDetailPage';
 import EventPage from './pages/eventPage';
 import GroupPage from './pages/groupPage';
-import GroupDetailsPage from './pages/groupDetail.jsx';
+import GroupDetailsPage from './pages/groupDetail';
+import SiginSuccessFull from './pages/signinSuccessfull';
 
 
 function App() {
@@ -33,6 +34,12 @@ function App() {
           <Route path="/"  element={<Home/>}/>
           <Route path="/events"  element={<Events/>}/>
           <Route path="/signin"  element={<Signin/>}/>
+
+          <Route path="/signinSuccess"  element={<SiginSuccessFull/>}/>
+
+          
+
+          
           <Route path="/signup"  element={<Signup/>}/>
           
 

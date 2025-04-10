@@ -17,6 +17,7 @@ const Signin = () =>{
 
     const handleGoogleLogin = () =>{
         const response =window.open("https://meetup-backend-8rsw.onrender.com/users/google" , "_self")
+        navigate("/")
         console.log(response)
     }
 
