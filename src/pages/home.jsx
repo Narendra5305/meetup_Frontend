@@ -50,7 +50,7 @@ const Home =() =>{
                         <div className="home-child-1-child-new-part-child-1">
                             
                             <h2>Your next events</h2>
-                            <a href="/events">View All</a>
+                            <a onClick={()=> navigate('/events')} >View All</a>
                             
                         </div>
 
