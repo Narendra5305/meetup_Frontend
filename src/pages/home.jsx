@@ -3,6 +3,7 @@ import "./pageCss/home.css"
 import axios from "axios";
 import Calendar from "../component/calender"
 import Loading from "../component/loading";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -11,6 +12,7 @@ const Home =() =>{
     const [groups,setGroup] = useState([])
     const [events,setEvent] = useState([])
 
+    const navigate = useNavigate();
     
 
     useEffect(()=>{
