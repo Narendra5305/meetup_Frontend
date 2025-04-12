@@ -77,9 +77,9 @@ const Home =() =>{
                             </div>
                         </div>
 
-                        <div className="home-child-1-child-2">
+                        <div  className="home-child-1-child-2">
                             {groups.map((group=>(
-                                <div key={group._id} className="group-cards-home">
+                                <div onClick={()=>navigate(`/groupDetails/${group._id}`)} key={group._id} className="group-cards-home">
                                     <div className="group-cards-home-img"><img src={group.image} alt="group image" /></div>
                                     <div className="group-cards-home-title"><h3>{group.name}</h3></div>
                                 </div>
@@ -109,7 +109,7 @@ const Home =() =>{
                                         <p>{event.description}</p>
                                         <p>{event.location}</p>
                                         <p>Date:{event.date.slice(0,10)}</p>
-                                        <a className="home-event-cards-2-go" href=""><img src="https://www.svgrepo.com/show/347781/link-external.svg" alt="link go" /></a>
+                                        <a onClick={()=>navigate(`/groupDetails/${event.group._id}`)} className="home-event-cards-2-go" href=""><img src="https://www.svgrepo.com/show/347781/link-external.svg" alt="link go" /></a>
                                         <a className="home-event-cards-2-bookmark" href=""><img src="https://www.svgrepo.com/show/347682/bookmark.svg" alt="bookmark go" /></a>
                                     </div>
                                     

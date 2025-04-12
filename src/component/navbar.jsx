@@ -5,10 +5,16 @@ import "./componentCss/navbar.css"
 
 const Navbar =() =>{
     const navigate = useNavigate();
+
+    const handleLogout = () =>{
+        localStorage.removeItem("authData")
+        navigate("/signin")
+    };
+
     return(
        <div id="navbar">
             <div className="navbar-1">
-                <div onClick={()=> navigate('/')} className="navbar-1-child-1">
+                <div onClick={()=> navigate('/dashboard')} className="navbar-1-child-1">
                     <img src="https://cdn.worldvectorlogo.com/logos/meetup-1.svg" alt="meetup logo" />
                 </div>
                 <div className="navbar-1-child-2">
@@ -54,7 +60,11 @@ const Navbar =() =>{
                         
                     </div>
 
+                    <button className="logout" onClick={handleLogout}>Logout</button>
+
+
                 </div>
+
             </div>
 
        </div>

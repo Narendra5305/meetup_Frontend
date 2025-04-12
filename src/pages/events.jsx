@@ -53,7 +53,7 @@ const Events =() =>{
                                     <p>{event.description}</p>
                                     <p>Date:{event.date.slice(0,10)}</p>
                                     <p>Location: {event.location}</p>
-
+                                    
                                 </div>
                             ))}
                         </div>

@@ -185,3 +185,15 @@
     width: 20px;
 
 }
+
+
+.logout{
+    cursor: pointer;
+    background-color:  #00798c;
+    margin-left: 10px;
+    height: 30px;
+    color: white;
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+}

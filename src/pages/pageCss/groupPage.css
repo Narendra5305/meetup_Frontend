@@ -1,0 +1,79 @@
+.group-main{
+    
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.group-cont{
+   
+    width: 70vw;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.group-card{
+    width: 300px;
+    border: 1px solid rgb(177, 177, 177);
+    height: 350px;
+    border-radius: 10px;
+}
+
+
+.group-card img{
+    height: 180px;
+    width: 300px;
+    border-radius: 10px 10px  0px 0px;
+}
+
+.group-card{
+    position: relative;
+}
+
+.group-card h2{
+    position: absolute;
+    font-size: 18px;
+    left: 10px;
+    top: 190px;
+}
+
+
+
+.group-card h6{
+    position: absolute;
+    font-size: 15px;
+    left: 10px;
+    top: 195px;
+    font-weight: 300;
+    color: rgb(48, 48, 48);
+}
+
+.group-card p{
+    position: absolute;
+    font-size: 14px;
+    left: 10px;
+    top: 240px;
+    color: rgb(120, 120, 120);
+
+}
+
+.group-card button{
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    right: 100px;
+    height: 30px;
+    background-color:  #00798c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
