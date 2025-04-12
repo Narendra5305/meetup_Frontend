@@ -52,7 +52,7 @@ const Events =() =>{
                                     <p>{event.title}</p>
                                     <p>{event.description}</p>
                                     <p>Date:{event.date.slice(0,10)}</p>
-                                    <p>{event.location}</p>
+                                    <p>Location: {event.location}</p>
 
                                 </div>
                             ))}

@@ -73,7 +73,7 @@ const Home =() =>{
                                 <h3>Your groups</h3>
                             </div>
                             <div className="home-child-1-child-2">
-                                <a href="">See all your groups</a>
+                                <a onClick={()=> navigate('/group')}>See all your groups</a>
                             </div>
                         </div>
 

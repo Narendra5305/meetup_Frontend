@@ -31,9 +31,10 @@
 }
 
 .home-child-1-child{
+   
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 200px;
     width: 90%;
     margin-top: 50px;
 }
@@ -248,5 +249,15 @@
     right: 40px;
     bottom: 10px;
 }
+
+
+* > a{
+    cursor: pointer;
+}
+
+.group-cards-home{
+    cursor: pointer;
+}
+
 
 

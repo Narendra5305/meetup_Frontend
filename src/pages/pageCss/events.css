@@ -1,5 +1,5 @@
 .events{
-    border: 1px solid;
+   
     width: 100vw;
     display: flex;
     justify-content: center; 
@@ -9,13 +9,13 @@
 
 .events-child{
     width: 70%;
-    border: 1px solid;
+   
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .event-card-part-1{
-    border-top: 2px solid rgb(183, 183, 183);
+    border-bottom: 2px solid rgb(183, 183, 183);
 }
 
 .event-card > h3{
@@ -32,6 +32,11 @@
 }
 
 
-.event-card-part-1-child {
-    border: 1px solid;
+.event-card-part-1-child{
+    border: 1px solid  #dfdfdfd8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
+
+
