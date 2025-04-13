@@ -72,47 +72,6 @@ A React-based web application for discovering and joining local groups and event
 - **Events**: Explore events organized by groups, with private access for logged-in users.
 - **Logout**: Clear local storage and redirect to the sign-in page.
 
-## Project Structure
-```
-meetup-app/
-├── src/
-│   ├── assets/
-│   │   └── react.svg
-│   ├── component/
-│   │   ├── Calendar.jsx
-│   │   ├── Footbar.jsx
-│   │   ├── Loading.jsx
-│   │   └── Navbar.jsx
-│   ├── pages/
-│   │   ├── Events.jsx
-│   │   ├── GroupDetails.jsx
-│   │   ├── GroupPage.jsx
-│   │   ├── Home.jsx
-│   │   ├── Signin.jsx
-│   │   ├── Signup.jsx
-│   │   ├── SigninSuccessfull.jsx
-│   │   ├── EventDetailPage.jsx
-│   │   └── PrivateRoute.jsx
-│   ├── componentCss/
-│   │   ├── calendar.css
-│   │   ├── footbar.css
-│   │   ├── loading.css
-│   │   └── navbar.css
-│   ├── pageCss/
-│   │   ├── events.css
-│   │   ├── groupDetails.css
-│   │   ├── groupPage.css
-│   │   ├── home.css
-│   │   ├── signin.css
-│   │   └── signup.css
-│   ├── App.jsx
-│   ├── App.css
-│   └── vite.svg
-├── public/
-├── package.json
-└── README.md
-```
-
 ## API Endpoints
 The app interacts with the following backend endpoints:
 
